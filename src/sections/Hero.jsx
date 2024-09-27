@@ -26,9 +26,9 @@ export function Hero() {
         <div className="relative grid grid-cols-2 md:flex gap-10 bg-white py-4 px-9 w-full md:w-fit left-0 right-0 mx-auto md:rounded-full -top-4 shadow-xl flex-wrap rounded-br-[50px]">
           <div className="flex flex-col">
             <span className="text-black/60">Buy/Rent</span>
-            <div className="flex gap-2 items-center">
-              <span className="text-black font-medium">Buy</span>
-              <ChevronDown color="black" size={20} strokeWidth={2} />
+            <div className="flex gap-2 items-center text-primary">
+              <span className=" font-medium">Buy</span>
+              <ChevronDown  size={20} strokeWidth={2} />
             </div>
           </div>
           <div className="flex flex-col">

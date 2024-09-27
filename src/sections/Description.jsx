@@ -1,11 +1,54 @@
-export function Description(){
-  return(
-    <section className="">
-      <div>
-        <h2>Your Dream Home,
-        Our Expertise.</h2>
+import HouseImg1 from "../assets/house-description.jpg";
+import HouseImg2 from "../assets/swimmingpool-expand.jpg";
+import HouseImg3 from "../assets/office-expand.jpg";
+import { CircleArrowUp } from "lucide-react";
+
+export function Description() {
+  return (
+    <section className="px-20 mt-24 flex flex-col gap-10">
+      <div className="w-full flex flex-col md:flex-row md:justify-between items-center gap-6">
+        <h2 className="text-5xl font-medium md:w-1/3">
+          Your Dream Home, Our Expertise.
+        </h2>
+        <p className="md:w-1/3 text-black/40 text-lg font-medium">
+          At Urbanouse, we are committed to helping individuals and families
+          find their perfect homes and smart investment properties. Our approach
+          blends personalized service, expert insights, and a dedication to
+          excellence, ensuring your real estate journey is seamless, rewarding,
+          and tailored to your unique needs.
+        </p>
       </div>
-      <div></div>
+      <div className="flex flex-wrap items-center gap-16">
+      <div className="flex flex-wrap gap-8" >
+        <div className="relative">
+          <img
+            src={HouseImg1}
+            alt="Family House"
+            className="h-80 object-cover rounded-bl-[40px] rounded-tr-[40px] brightness-75"
+          />
+          <div className="absolute flex flex-col gap-1 bottom-4 left-10 text-white">
+            <span className="text-xl font-medium drop-shadow-2xl">
+              Family House
+            </span>
+            <span className="drop-shadow-2xl">487 Units</span>
+          </div>
+        </div>
+        <img
+          src={HouseImg2}
+          alt="Family House"
+          className="h-80 w-60 object-cover rounded-bl-[40px] rounded-tr-[40px] "
+        />
+        <img
+          src={HouseImg3}
+          alt="Family House"
+          className="h-80 w-60 object-cover rounded-bl-[40px] rounded-tr-[40px] "
+        />
+      </div>
+      <div className="flex flex-col items-center text-primary gap-4">
+     <CircleArrowUp strokeWidth={0.5} size={90} className="rotate-45" />
+     <span className="text-center text-xl font-medium">More <br /> Projects</span>
+     </div>
+      </div>
     </section>
-  )
+  );
 }
